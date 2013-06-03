@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.viewpagerindicator.sample"
+    android:versionCode="65"
+    android:versionName="2.4.1">
+
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="16" />
+
+    <application
+        android:label="SA Senior Club"
+        android:icon="@drawable/icon">
+
+        <activity
+            android:name=".ListSamples"
+            android:label="SA Senior Club">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <permission
+                android:name="com.viewpage.android.locationapi.maps.permission.MAPS_RECEIVE"
+                android:protectionLevel="signature" />
+
+        <meta-data
+                android:name="com.google.android.maps.v2.API_KEY"
+                android:value="AIzaSyDEYbqdhp8aygT32d7kucv6BXC9rjpuigA"/>
+
+    </application>
+</manifest>
